@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Currency Exchange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Currency converter</h1>
+        <img class="coins" src="img/coins.png" alt="Golden coins">
+
+        <form class="form">
+            <label class="set value">Value to exchange: <input type="number" id="value" required></label>
+
+            <fieldset class="set">
+                Input currency:
+                <label><input type="radio" name="inputCurrency" class="USD" value='' required>USD</label>
+                <label><input type="radio" name="inputCurrency" class="EUR" value='' required>EUR</label>
+                <label><input type="radio" name="inputCurrency" class="GBP" value='' required>GBP</label>
+                <label><input type="radio" name="inputCurrency" class="PLN" value='' required>PLN</label>
+            </fieldset>
+
+            <fieldset class="set">
+                Show as:
+                <label><input type="radio" name="outputCurrency" class="USD" value='' required>USD</label>
+                <label><input type="radio" name="outputCurrency" class="EUR" value='' required>EUR</label>
+                <label><input type="radio" name="outputCurrency" class="GBP" value='' required>GBP</label>
+                <label><input type="radio" name="outputCurrency" class="PLN" value='' required>PLN</label>
+            </fieldset>
+
+            <button type="submit" class="btn" id="submit">Show</button>
+        </form>
+
+        <div class="outputBox">
+            <p id="output" class="output"></p>
+            <button class="btn btn-close" id="closeBtn">Close</button>
+        </div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
