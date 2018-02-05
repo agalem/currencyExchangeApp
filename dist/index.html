@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+
+    <main class="container">
+        <h1>Currency converter</h1>
+        <img src="img/coins.png" alt="Golden coins">
+
+        <form>
+            <input type="number" id="value" required>
+            Input currency:
+            <label><input type="radio" name="inputCurrency" id='teml' class="USD" value='' required>USD</label>
+            <label><input type="radio" name="inputCurrency" class="EUR" value='' required>EUR</label>
+            <label><input type="radio" name="inputCurrency" class="GBP" value='' required>GBP</label>
+            <label><input type="radio" name="inputCurrency" class="PLN" value='' required>PLN</label>
+            <br><br>
+            Show as:
+            <label><input type="radio" name="outputCurrency" class="USD" value='' required>USD</label>
+            <label><input type="radio" name="outputCurrency" class="EUR" value='' required>EUR</label>
+            <label><input type="radio" name="outputCurrency" class="GBP" value='' required>GBP</label>
+            <label><input type="radio" name="outputCurrency" class="PLN" value='' required>PLN</label>
+            <button type="submit" class="btn btn-submit" id="submit">Show</button>
+        </form>
+
+        <p id="output">1452.6022</p>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
